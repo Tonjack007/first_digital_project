@@ -1,0 +1,158 @@
+.visionHeadline{
+  background-color: #000;
+  
+}
+.visionHeadline > h2 {
+  color: #fff;
+  font-size:2rem;
+  padding-left: 2rem;
+}
+.visionHeadline > span{
+  color: #fff;
+  font-size:1rem;
+  padding-left: 2rem;
+
+}
+ 
+.boxes{
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  position: relative;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height:200px;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  position: relative;
+  
+
+}
+.box::after {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.750);
+}
+.box > a{
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-size: 1rem;
+  z-index: 1;
+}
+a:hover{
+  text-decoration: underline;
+}
+.alphaV{
+  background-image: url(images/fdpic5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.betaV{
+  background-image: url(images/vision2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gammaV{
+  background-image: url(images/vision3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width:480px)  { .boxes{
+  display: flex;
+  flex-direction: column;
+  
+}
+.box{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+  
+}
+@media (max-width:720px) {
+  .boxes{
+    display: flex;
+    flex-direction: column;
+  }
+  .box{
+    width: 200px;
+    height: 200px;
+  }
+  
+}
+@media (min-width:721px) {
+  
+  .box{
+    width: 250px;
+    height: 250px;
+  }
+  .visionHeadline > h2{
+    font-size: 3rem;
+  }
+  .visionHeadline > span{
+    font-size: 2rem;
+  }
+  .box > a{
+    font-size: 1.5rem;
+  
+}
+}
+@media (min-width:1080px) {
+  .box{
+    width: 300px;
+    height: 300px;
+  }
+
+  .visionHeadline > h2{
+    font-size: 4rem;
+  }
+  .visionHeadline > span{
+    font-size: 3rem;
+  }
+  .box > a{
+    font-size: 2rem;
+  
+}
+}
+@media (min-width:1440px) {
+  .box{
+    width: 400px;
+    height: 400px;
+  }
+  .visionHeadline > h2{
+    font-size: 5rem;
+  }
+  .visionHeadline > span{
+    font-size: 4rem;
+  }
+  .box > a{
+    font-size: 2rem;
+  }
+}
+@media (min-width:1920px) {
+  .box{
+    width: 600px;
+    height: 600px;
+  }
+  .visionHeadline > h2{
+    font-size: 6rem;
+  }
+  .visionHeadline > span{
+    font-size: 4rem;
+  }
+  .box > a{
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,35 @@
+.mainCTA{
+  width: 10rem;
+  height: 3rem;
+  background: #3641d5;
+  text-align: center;
+  
+
+}
+@media (min-width:1080px) {
+  .mainCTA{
+    width: 15rem;
+    height: 4rem;
+    background: #3641d5;
+    text-align: center;
+  }
+  
+}
+@media (min-width:1440px) {
+  .mainCTA{
+    width: 20rem;
+    height: 5rem;
+    background: #3641d5;
+    text-align: center;
+  }
+  
+}
+@media (min-width:1920px) {
+  .mainCTA{
+    width: 25rem;
+    height: 6rem;
+    background: #3641d5;
+    text-align: center;
+  }
+  
+}

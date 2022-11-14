@@ -1,0 +1,170 @@
+
+body{
+  background: #000;
+}.mainServices{
+  display: flex;
+  justify-content:space-evenly ;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+
+.servBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border-radius:50%;
+  background:#3641d5;
+  padding: 2rem 0.8rem 1rem 0.5rem;
+  position: relative;
+
+}
+.servBox::after {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.650);
+  border-radius: 50%;
+}
+.box{
+  position: relative;
+
+}
+.servBox > a{
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 1;
+
+}
+.servBox > a:hover{
+  text-decoration: underline;
+  color: #3641d5;
+}
+.servBox > span{
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+
+
+}
+
+.alpha{
+  background-image: url(images/servMon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+.beta{
+  background-image: url(images/servDig.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gamma{
+  background-image: url(images/servKry.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.delta{
+  background-image: url(images/servStk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+@media (max-width:480px)  { .mainServices
+  {
+  display: flex;
+  flex-direction: column;
+  border-radius: none;
+  
+  
+}
+}
+@media (max-width:720px) {.mainServices{
+  display: flex;
+  flex-direction: column;
+  border-radius: none;
+}
+  
+}
+@media (min-width:721px) {
+  .servBox{
+    width: 250px;
+  height: 250px;
+  }
+  .elements > .mainServices > .servBox > a{
+    font-size: 1.5rem;
+
+  }
+  .elements > .mainServices > .servBox > span{
+    font-size: 1rem;
+
+  }
+ 
+  
+
+}
+@media (min-width:1080px) {
+  .servBox{
+    width: 300px;
+  height: 300px;
+}
+.elements > .mainServices > .servBox > a{
+  font-size: 2rem;
+
+}
+.elements > .mainServices > .servBox > span{
+  font-size: 1.5rem;
+
+
+  }
+ 
+}
+@media (min-width:1440px) {
+  .servBox{
+    width: 400px;
+  height: 400px;
+}
+.elements > .mainServices > .servBox > a{
+  font-size: 2.5rem;
+
+}
+.elements > .mainServices > .servBox > span{
+  font-size: 2rem;
+
+
+  }
+
+}
+@media (min-width:1920px) {
+  .servBox{
+    width: 450px;
+  height: 450px;
+}
+.elements > .mainServices > .servBox > a{
+  font-size: 2.5rem;
+
+}
+.elements > .mainServices > .servBox > span{
+  font-size: 2rem;
+
+
+  }
+
+
+}

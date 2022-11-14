@@ -1,0 +1,103 @@
+
+body{
+  position: relative;
+  background: #222;
+  color: #fff;
+
+}
+
+
+
+.main{
+  min-height: 90vh;
+  display: flex;
+  background-image: url('images/fd_hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.textMain{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  gap: 3rem;
+  
+
+}
+.textMain > button{
+  align-self: center;
+
+}
+
+.main::after {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.700);
+}
+
+.textMain > h2{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+.textMain > p{
+  font-size: 1rem;
+}
+button:hover{
+  text-decoration: underline;
+}
+@media (max-width:720px) {
+  .boxes{
+    display: flex;
+    flex-direction: column;
+  }
+  .box{
+    width: 200px;
+    height: 200px;
+  }
+  
+}
+@media (min-width:721px) {
+  
+  .box{
+    width: 250px;
+    height: 250px;
+  }
+  .visionHeadline > h2{
+    font-size: 3rem;
+  }
+  .visionHeadline > span{
+    font-size: 2rem;
+  }
+  .box > a{
+    font-size: 1.5rem;
+  
+}
+}
+@media (min-width:1080px) {
+  .main > .textMain > h2{
+    font-size: 6rem;
+  }
+  .main > .textMain > p{
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
