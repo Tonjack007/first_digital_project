@@ -5,3 +5,5 @@ const navLinks = document.querySelector('.navLinks')
 burgerNav.addEventListener('click', () => {
   navLinks.classList.toggle('active')
 })
+
+
