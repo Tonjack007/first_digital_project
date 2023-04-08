@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css_pics/reset.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="css_pics/navSub.css">
+    <link rel="icon" type="image/x-icon" href="favicon_io (2)/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="favicon_io (2)/favicon-32x32.png">
+  <link rel="icon" type="image/x-icon" href="favicon_io (2)/android-chrome-192x192.png">
+  <link rel="icon" type="image/x-icon" href="favicon_io (2)/android-chrome-512x512.png">
+  <link rel="icon" type="image/x-icon" href="favicon_io (2)/apple-touch-icon.png">
+    <script src="nav.js" defer></script>
+    <script src="carousel.js" defer></script>
+
+<body>
+    <header class="mainHeader">
+        <nav class="mainNav">
+         <a href="index.html"><div class="mainLogo"><img src="css_pics/images/Asset 1@2x.png" alt="Logo First Digital"></div></a>
+         <a href="#" class="burgerNav">
+          <span class="burger"></span>
+          <span class="burger"></span>
+          <span class="burger"></span>
+         </a>
+         <div class="navLinks">
+           <ul>
+             <li><a href="services.html">Services</a></li>
+             <li><a href="vision.html">Vision</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="#">News</a></li>
+           </ul>
+         </div>
+         </nav>
+       </header>
+
+    <section class="carousel">
+       <div id="carousel">
+        <div class="image active">
+          <img src="css_pics/images/fdpic1.jpg" alt="Image 1">
+        </div>
+        <div class="image">
+          <img src="css_pics/images/fdpic2.jpg" alt="Image 2">
+        </div>
+        <div class="image">
+          <img src="css_pics/images/fdpic3.jpg" alt="Image 3">
+        </div>
+        <div class="image">
+          <img src="css_pics/images/fdpic4.jpg" alt="Image 4">
+        </div>
+      </div>
+
+      <div class="ccta">
+        <button class="cta" id="prevBtn">Previous</button>
+        <button class="cta" id="playPauseBtn">Play/Pause</button>
+        <button class="cta" id="nextBtn">Next</button>
+       
+        </div>
+
+    </section>
+     
+     
+
+    
+</body>
+</html>

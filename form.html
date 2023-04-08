@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css_pics/reset.css">
-  <link rel="stylesheet" href="css_pics/form.css">
+  <link rel="stylesheet" href="css_pics/form1.css">
   <link rel="stylesheet" href="css_pics/navSub.css">
   <link rel="stylesheet" href="css_pics/footers.css">
   <link rel="stylesheet" href="css_pics/cta.css">
@@ -15,64 +15,97 @@
   <link rel="icon" type="image/x-icon" href="favicon_io (2)/android-chrome-192x192.png">
   <link rel="icon" type="image/x-icon" href="favicon_io (2)/android-chrome-512x512.png">
   <link rel="icon" type="image/x-icon" href="favicon_io (2)/apple-touch-icon.png">
-  <script src="nav.js" defer></script>
+  <script src="form_val.js" defer></script>
     <title>Sign In</title>
 </head>
 <body>
-    <header class="mainHeader">
-        <nav class="mainNav">
-         <a href="index.html"><div class="mainLogo"><img src="css_pics/images/Asset 1@2x.png" alt="Logo First Digital"></div></a>
-         <a href="#" class="burgerNav">
-          <span class="burger"></span>
-          <span class="burger"></span>
-          <span class="burger"></span>
-         </a>
-         <div class="navLinks">
-           <ul>
-             <li><a href="services.html">Services</a></li>
-             <li><a href="vision.html">Vision</a></li>
-             <li><a href="about.html">About</a></li>
-             <li><a href="#">News</a></li>
-           </ul>
-         </div>
-         </nav>
-       </header>
-    <form>
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" placeholder="z.B John">
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name" placeholder="z.B Doe">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="z.B johndoe@gmail.com">
-        <label for="message">Message</label>
-        <textarea id="message" cols="30" rows="10" placeholder="place your text here"></textarea>
-        <div>
-          <input type="submit" value="Send">
-          <input type="reset" value="Reset">
+   
+
+      <div class="container">
+        <form id ="form" action="/">
+          <div class="formSuLogo"><img src="css_pics/images/Asset 1@2x.png" alt="Logo First Digital"></div>
+        <h1>Registration</h1>
+        
+      <div class="mainForm">
+      <div class="inptCtrl">
+        <div class="input-control username">
+          <label for="username">Username</label>
+          <input class="inptUsername" id= "username" name="username" placeholder="Username" type="text">
+          <div class="error"></div>
         </div>
-      </form>
-      <footer class="mainFooter">
-        <a href="index.html"><div class="logoFooter footer"><img src="css_pics/images/Asset 1@2x.png" alt="First Digital Logo"></div></a>
-         
-         <div class="social footer"> 
-             
-          <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-          <a href="#" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-          <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          </div>
-          
-            
-        
-        
-          <div class="links footer">
-            <ul>
-              <li class="link imp"><a href="imprint.html">Imprint</a></li>
-              <li class="link tos"><a href="#">ToS</a></li>
-            </ul>
-          </div>
+        <div class="input-control salutation">
+          <label for="salutation">Salutation (Optional)</label>
+          <input class="inptSalutation" id= "salutation" name="salutation" placeholder="Salutation" type="text">
+          <div class="error"></div>
+        </div>
+      <div class="boxNames">
+        <div class="input-control famname">
+          <label for="famname">Name</label>
+          <input class="inptFamname" id= "famname" name="famname" placeholder="Name" type="text">
+          <div class="error"></div>
+        </div>
       
-      </footer>
+        <div class="input-control prename">
+          <label for="prename">Prename</label>
+          <input   class="inptPrename" id= "prename" name="prename" placeholder="Prename" type="text">
+          <div class="error"></div>
+        </div>
+      </div>
+
+        <div class="input-control address">
+          <label for="address">Adress</label>
+          <input class="inptAddress" id= "address" name="address" placeholder="Address" type="text">
+          <div class="error"></div>
+        </div>
+       <div class="zipTown">
+        <div class="input-control postcode">
+          <label for="postcode">Postcode</label>
+          <input  class="inptPostcode" id= "postcode" name="postcode" placeholder="Postcode" type="text">
+          <div class="error"></div>
+        </div>
+      
+        <div class="input-control town">
+          <label for="town">Town</label>
+          <input class="inptTown" id= "town" name="town" placeholder="Town" type="text">
+          <div class="error"></div>
+        </div>
+       </div>
+
+        <div class="input-control email">
+          <label for="email">Email</label>
+          <input class="inptEmail" id= "email" name="email" placeholder="Email" type="text">
+          <div class="error"></div>
+        </div>
+        
+      <div class="inptPassBox">
+        <div class="input-control pass">
+          <label for="password">Password</label>
+          <input class="inptPass" id= "password" name="password" placeholder="Password" type="password">
+          <div class="error"></div>
+        </div>
+
+        <div class="input-control pass2">
+          <label for="password">Password Confirm</label>
+          <input class="inptPass2" id= "password2" name="password2" placeholder="Re-entry Password" type="password">
+          <div class="error"></div>
+        </div>
+      </div>
+      <div class="input-control message">
+        <label for="email">Message (Optional)</label>
+        <input class="inptMessage" id= "message" name="message" placeholder="message" type="text">
+        <div class="error"></div>
+      </div>
+      
+      </div>
+      
+      </div>
+      
+      <div class="formCTA">
+        <button id="signUpCTA" type="submit">Sign Up</button>
+      </div>
+       </form>
+      </div>
+
     
 </body>
 </html>
